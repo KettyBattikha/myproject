@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitVerse - Contact Us</title>
+    <link rel="stylesheet" href="master.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">FitVerse</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="competitions.html">Competitions</a></li>
+                    <li><a href="points.html">Points</a></li>
+                    <li><a href="rating.html">Reviews</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="users.html">Members</a></li>
+                    <li><a href="login.html" class="btn btn-primary" id="join-us-btn">Join Us</a></li>
+                    <li><a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+                <div class="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="section">
+            <div class="container">
+                <h2>Contact FitVerse</h2>
+                <p>We'd love to hear from you! Get in touch with us for any questions, feedback, or support.</p>
+                
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Visit Us</h4>
+                                <p>123 Fitness Street<br>
+                                Wellness District<br>
+                                Health City, HC 12345</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Call Us</h4>
+                                <p>Main: (555) 123-4567<br>
+                                Support: (555) 123-4568<br>
+                                Emergency: (555) 911-HELP</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email Us</h4>
+                                <p>info@fitverse.com<br>
+                                support@fitverse.com<br>
+                                careers@fitverse.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Hours</h4>
+                                <p>Mon-Fri: 5:00 AM - 11:00 PM<br>
+                                Sat-Sun: 6:00 AM - 10:00 PM<br>
+                                Holidays: 8:00 AM - 8:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h3>Send Us a Message</h3>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">Full Name *</label>
+                                <input type="text" id="contact-name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-email">Email Address *</label>
+                                <input type="email" id="contact-email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-phone">Phone Number</label>
+                                <input type="tel" id="contact-phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-subject">Subject *</label>
+                                <select id="contact-subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="membership">Membership Questions</option>
+                                    <option value="classes">Classes & Training</option>
+                                    <option value="facilities">Facilities & Equipment</option>
+                                    <option value="billing">Billing & Payments</option>
+                                    <option value="feedback">Feedback & Suggestions</option>
+                                    <option value="complaint">Complaint</option>
+                                    <option value="technical">Technical Support</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-message">Message *</label>
+                            <textarea id="contact-message" name="message" rows="6" required placeholder="Please provide details about your inquiry..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-priority">Priority Level</label>
+                            <select id="contact-priority" name="priority">
+                                <option value="low">Low - General inquiry</option>
+                                <option value="medium" selected>Medium - Standard request</option>
+                                <option value="high">High - Urgent matter</option>
+                                <option value="urgent">Urgent - Immediate attention needed</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="preferred-contact">Preferred Contact Method</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="preferredContact" value="email" checked>
+                                    Email
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="preferredContact" value="phone">
+                                    Phone Call
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="preferredContact" value="text">
+                                    Text Message
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="preferredContact" value="no-preference">
+                                    No Preference
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter-signup" name="newsletter">
+                                Subscribe to our newsletter for fitness tips and updates
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy-agreement" name="privacy" required>
+                                I agree to the <a href="#" target="_blank">Privacy Policy</a> and consent to my information being used to respond to my inquiry
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary full-width">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>What are your membership options?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We offer flexible membership plans including monthly, quarterly, and annual options. All memberships include access to our full range of equipment, group classes, and basic amenities. Premium memberships also include personal training sessions and additional perks.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>Do you offer personal training?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes! We have certified personal trainers available for one-on-one sessions, small group training, and specialized programs. You can book sessions through our app or speak with our front desk staff.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>What safety measures do you have in place?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Your safety is our priority. We maintain rigorous cleaning protocols, have trained staff on-site during all operating hours, provide safety equipment, and conduct regular equipment maintenance. We also offer safety orientations for new members.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>Can I freeze or cancel my membership?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, we offer flexible options for freezing or canceling memberships. Freezing is available for medical reasons, travel, or other circumstances. Cancellation policies vary by membership type, and we're happy to discuss your options.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>Do you have parking available?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We provide free parking for all members and visitors. Our parking lot has over 100 spaces and is well-lit for evening workouts. We also have bike racks for those who prefer to cycle to the gym.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 FitVerse. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/components/contact.js"></script>
+    <script src="ja.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitVerse - No Shake Test</title>
+    <style>
+        /* ANTI-SHAKE CSS - NUCLEAR OPTION */
+        *, *::before, *::after {
+            animation: none !important;
+            transform: none !important;
+            -webkit-animation: none !important;
+            -webkit-transform: none !important;
+            backface-visibility: hidden !important;
+            -webkit-backface-visibility: hidden !important;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        
+        .navbar {
+            background: white;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            animation: none !important;
+            transform: none !important;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+            animation: none !important;
+            transform: none !important;
+        }
+        
+        .test-content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">FitVerse - NO SHAKE TEST</div>
+    </div>
+    
+    <div class="test-content">
+        <h1>Anti-Shake Test Page</h1>
+        <p>This page tests if the shaking issue has been resolved.</p>
+        <p>The logo and navbar should be completely stable with no movement or shaking.</p>
+        <p>If you still see shaking, the issue might be:</p>
+        <ul>
+            <li>Browser-specific rendering issues</li>
+            <li>Hardware acceleration problems</li>
+            <li>External CSS or JavaScript conflicts</li>
+            <li>Monitor refresh rate issues</li>
+        </ul>
+        
+        <h2>Quick Fixes to Try:</h2>
+        <ol>
+            <li><strong>Hard refresh:</strong> Ctrl+F5 (Windows) or Cmd+Shift+R (Mac)</li>
+            <li><strong>Clear browser cache</strong></li>
+            <li><strong>Try a different browser</strong> (Chrome, Firefox, Safari)</li>
+            <li><strong>Disable browser extensions</strong></li>
+            <li><strong>Check if hardware acceleration is enabled</strong> in browser settings</li>
+        </ol>
+    </div>
+</body>
+</html>

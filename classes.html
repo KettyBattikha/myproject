@@ -1,0 +1,186 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>FitVerse - Our Classes</title> 
+    <link rel="stylesheet" href="master.css"> 
+    <link 
+href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family
+ =Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font
+awesome/6.0.0-beta3/css/all.min.css"> 
+</head> 
+<body> 
+    <header> 
+        <nav class="navbar"> 
+            <div class="container"> 
+                <a href="index.html" class="logo">FitVerse</a> 
+                <ul class="nav-links"> 
+                    <li><a href="index.html">Home</a></li> 
+                    <li><a href="sports.html">Sports</a></li> 
+                    <li><a href="classes.html">Classes</a></li> 
+                    <li><a href="shop.html">Shop</a></li> 
+                    <li><a href="competitions.html">Competitions</a></li> 
+                    <li><a href="points.html">Points</a></li>
+                    <li><a href="rating.html">Reviews</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="users.html">Members</a></li>
+                    <li><a href="login.html" class="btn btn-primary">Join 
+Us</a></li> 
+                    
+                </ul> 
+                <div class="hamburger-menu"> 
+                    <i class="fas fa-bars"></i> 
+                </div> 
+            </div> 
+        </nav> 
+    </header> 
+ 
+    <main id="main-content"> 
+        <section class="section"> 
+            <div class="container"> 
+                <h2>Choose Your Classes</h2> 
+                <form id="class-selection-form" class="classes-form"> 
+                    <div class="class-item"> 
+                        <div class="class-info"> 
+                            <h4>Weightlifting Basics</h4> 
+                            <p>Trainer: Omar Khalil</p> 
+                        </div> 
+                        <div class="class-selection"> 
+                            <input type="checkbox" id="class-wl-basics" 
+value="wl-basics" data-class-name="Weightlifting Basics" data-trainer-name="John Doe"> 
+                            <label for="class-wl-basics">Select</label> 
+                            <select id="time-wl-basics"> 
+                                <option value="Monday 9:00 AM">Monday 9:00 
+AM</option> 
+                                <option value="Wednesday 5:00 PM">Wednesday 5:00 
+PM</option> 
+                                <option value="Friday 1:00 PM">Friday 1:00 
+PM</option> 
+                            </select> 
+                        </div> 
+                    </div> 
+ 
+                    <div class="class-item"> 
+                        <div class="class-info"> 
+                            <h4>Advanced Cardio</h4> 
+                            <p>Trainer: Sami karam</p> 
+                        </div> 
+                        <div class="class-selection"> 
+                            <input type="checkbox" id="class-acardio" 
+value="acardio" data-class-name="Advanced Cardio" data-trainer-name="Jane Smith"> 
+                            <label for="class-acardio">Select</label> 
+                            <select id="time-acardio"> 
+                                <option value="Tuesday 6:00 PM">Tuesday 6:00 
+PM</option> 
+                                <option value="Thursday 7:00 AM">Thursday 7:00 
+AM</option> 
+                                <option value="Saturday 10:00 AM">Saturday 10:00 
+AM</option> 
+                            </select> 
+                        </div> 
+                    </div> 
+ 
+                    <div class="class-item"> 
+                        <div class="class-info"> 
+                            <h4>Vinyasa Yoga</h4> 
+                            <p>Trainer: Maya Bilal</p> 
+                        </div> 
+                        <div class="class-selection"> 
+ 
+<input type="checkbox" id="class-yoga" value="yoga" data-class-name="Vinyasa 
+Yoga" data-trainer-name="Maya Khan"> 
+                            <label for="class-yoga">Select</label> 
+                            <select id="time-yoga"> 
+                                <option value="Monday 7:00 PM">Monday 7:00 
+PM</option> 
+                                <option value="Friday 9:00 AM">Friday 9:00 
+AM</option> 
+                                <option value="Sunday 10:00 AM">Sunday 10:00 
+AM</option> 
+                            </select> 
+                        </div> 
+                    </div> 
+ 
+                    <div class="class-item"> 
+                        <div class="class-info"> 
+                            <h4>Boxing Fundamentals</h4> 
+                            <p>Trainer: Mike Saeed</p> 
+                        </div> 
+                        <div class="class-selection"> 
+                            <input type="checkbox" id="class-boxing" 
+value="boxing" data-class-name="Boxing Fundamentals" data-trainer-name="Mike 
+Tyson Jr."> 
+                            <label for="class-boxing">Select</label> 
+                            <select id="time-boxing"> 
+                                <option value="Tuesday 8:00 PM">Tuesday 8:00 
+PM</option> 
+                                <option value="Saturday 11:00 AM">Saturday 11:00 
+AM</option> 
+                                <option value="Thursday 6:00 PM">Thursday 6:00 
+PM</option> 
+                            </select> 
+                        </div> 
+                    </div> 
+ 
+                    <div class="class-item"> 
+                        <div class="class-info"> 
+                            <h4>Swimming Techniques</h4> 
+                            <p>Trainer: Sarah Talal</p> 
+                        </div> 
+                        <div class="class-selection"> 
+                            <input type="checkbox" id="class-swimming" 
+value="swimming" data-class-name="Swimming Techniques" data-trainer-name="Sarah 
+Lee"> 
+                            <label for="class-swimming">Select</label> 
+                            <select id="time-swimming"> 
+                                <option value="Monday 11:00 AM">Monday 11:00 
+AM</option> 
+                                <option value="Wednesday 7:00 PM">Wednesday 7:00 
+PM</option> 
+                            </select> 
+                        </div> 
+                    </div> 
+ 
+                    <div class="class-item"> 
+                        <div class="class-info"> 
+                            <h4>CrossFit Endurance</h4> 
+                            <p>Trainer: Samir Jalal</p> 
+                        </div> 
+                        <div class="class-selection"> 
+                            <input type="checkbox" id="class-crossfit" 
+value="crossfit" data-class-name="CrossFit Endurance" data-trainer-name="David 
+Strong"> 
+                            <label for="class-crossfit">Select</label> 
+                            <select id="time-crossfit"> 
+                                <option value="Tuesday 9:00 AM">Tuesday 9:00 
+AM</option> 
+                                <option value="Friday 6:00 PM">Friday 6:00 
+PM</option> 
+                            </select> 
+                        </div> 
+                    </div> 
+ 
+                    <button type="submit" class="btn btn-primary">Enroll in 
+Selected Classes</button> 
+                </form> 
+            </div> 
+        </section> 
+    </main> 
+ 
+    <footer> 
+        <div class="container"> 
+            <p>&copy; 2025 FitVerse. All rights reserved.</p> 
+            <div class="social-links"> 
+                <a href="#"><i class="fab fa-facebook-f"></i></a> 
+                <a href="#"><i class="fab fa-twitter"></i></a> 
+                <a href="#"><i class="fab fa-instagram"></i></a> 
+            </div> 
+        </div> 
+    </footer> 
+<script src="js/api.js"></script>
+<script src="js/components/classes.js"></script>
+<script src="ja.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitVerse - Member Directory</title>
+    <link rel="stylesheet" href="master.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">FitVerse</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="competitions.html">Competitions</a></li>
+                    <li><a href="points.html">Points</a></li>
+                    <li><a href="rating.html">Reviews</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="users.html">Members</a></li>
+                    <li><a href="login.html" class="btn btn-primary" id="join-us-btn">Join Us</a></li>
+                    <li><a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+                <div class="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="section">
+            <div class="container">
+                <h2>Member Directory</h2>
+                <p>Connect with fellow FitVerse members and build your fitness community!</p>
+                
+                <!-- Search and Filter Controls -->
+                <div class="search-controls">
+                    <div class="search-bar">
+                        <input type="text" id="user-search" placeholder="Search members by name, email, or username..." class="search-input">
+                        <button id="search-btn" class="btn btn-primary">
+                            <i class="fas fa-search"></i> Search
+                        </button>
+                        <button id="clear-search" class="btn btn-secondary">
+                            <i class="fas fa-times"></i> Clear
+                        </button>
+                    </div>
+                    
+                    <div class="filter-controls">
+                        <select id="sort-filter" class="filter-select">
+                            <option value="name">Sort by Name</option>
+                            <option value="points">Sort by Points</option>
+                            <option value="joinDate">Sort by Join Date</option>
+                        </select>
+                        
+                        <select id="points-filter" class="filter-select">
+                            <option value="">All Point Levels</option>
+                            <option value="0-100">0-100 points</option>
+                            <option value="101-300">101-300 points</option>
+                            <option value="301-500">301-500 points</option>
+                            <option value="500+">500+ points</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Search Results -->
+                <div class="search-results">
+                    <div class="results-header">
+                        <span id="results-count">Loading members...</span>
+                        <div class="view-toggle">
+                            <button id="grid-view" class="view-btn active" title="Grid View">
+                                <i class="fas fa-th"></i>
+                            </button>
+                            <button id="list-view" class="view-btn" title="List View">
+                                <i class="fas fa-list"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div id="users-container" class="users-grid">
+                        <!-- Users will be loaded dynamically -->
+                    </div>
+                    
+                    <!-- Loading indicator -->
+                    <div id="loading-indicator" class="loading-indicator">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Loading members...</p>
+                    </div>
+                    
+                    <!-- No results message -->
+                    <div id="no-results" class="no-results" style="display: none;">
+                        <i class="fas fa-users"></i>
+                        <p>No members found matching your search criteria.</p>
+                        <button onclick="UsersManager.clearSearch()" class="btn btn-secondary">Clear Search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 FitVerse. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/components/users.js"></script>
+    <script src="ja.js"></script>
+</body>
+</html>
