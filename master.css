@@ -2673,6 +2673,6 @@ footer .social-links a:hover {
     font-size: 1.1rem;
     line-height: 1.8;
     color: var(--secondary-color);
-    margin: 0;
+    margin: 1;
 }
 
